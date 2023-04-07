@@ -1,3 +1,10 @@
 ##!/usr/bin/env bash
 
-pkgbuild --root ./Distribution --identifier com.example.my-package --version 1.3 --install-location $HOME/Movies "./Pro Zooms.pkg"
+# Update the version here
+VERSION="1.3"
+
+pkgbuild \
+  --root ./Distribution \
+  --version $VERSION \
+  --install-location ~/Movies \
+  "./Pro Zooms.pkg"
